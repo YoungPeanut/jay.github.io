@@ -16,7 +16,7 @@ tagline: Site Tagline
 lang: en
 footerDetail: true
 author :
-  name : Name Lastname
+  name : youngpeanut
   avatar : false
   introduction : "A brief introduction should be placed here, in order to make the author known well to the reader"
   email : user@email.test
