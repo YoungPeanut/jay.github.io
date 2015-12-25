@@ -8,7 +8,9 @@
 $(document).ready(function() {
     generateContent();
     share();
-    disqus();
+
+    //dis的评论模块
+    //disqus();
 });
 
 /**
