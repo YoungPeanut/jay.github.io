@@ -33,6 +33,7 @@
                         <li>{% endif %}
                         <a href="{{ site.baseurl | prepend: site.url }}/" class="word-keep"><span class="octicon octicon-book"></span></span>&nbsp;&nbsp;Blog</a>
                         </li>
+
                         {% for p in site.pages %}{% if p.isNavItem %}
                         {% if p.url == page.url %}
                         <li class="active">{% else %}
@@ -41,7 +42,20 @@
                         </li>
                         {% endif %}
                         {% endfor %}
-                        <li><a href="#stq=" class="search-button"><span class="octicon octicon-search"></span></a></li>
+
+
+
+                        <li>
+                            <a href="{{ site.baseurl | prepend: site.url }}/" class="word-keep">
+                                <span class="octicon octicon-book"></span>&nbsp;&nbsp;About
+                            </a>
+                        </li>
+
+                        <li>
+                            <a href="#stq=" class="search-button">
+                                <span class="octicon octicon-search"></span>
+                            </a>
+                        </li>
                     </ul>
                 </div>
             </div>

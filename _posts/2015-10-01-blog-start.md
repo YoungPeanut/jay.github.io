@@ -2,6 +2,7 @@
 layout: post
 title: 此开博第一篇也
 keywords: 首页
+categories: [前言和结语]
 description: 陈少的博客首页
 ---
 
