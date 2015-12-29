@@ -311,11 +311,14 @@ public static class AvatarImageBehavior
 }
 ```
 
-简书
-博客
+>简书
+[博客](http://youngpeanut.github.io/2015-12-23/android-%5B译%5D掌握CoordinatorLayout/)
+
 [原文](http://saulmm.github.io/mastering-coordinator/)
 
 ###Resources
 ＊[Coordinator Behavior Example](https://github.com/saulmm/CoordinatorBehaviorExample)- Github
+
 ＊[Coordinator Examples](https://github.com/saulmm/CoordinatorExamples)- Github
+
 ＊[Introduction to coordinator layout on Android](https://lab.getbase.com/introduction-to-coordinator-layout-on-android/)- Grzesiek Gajewski
