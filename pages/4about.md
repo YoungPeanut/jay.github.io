@@ -5,13 +5,11 @@ permalink: /about/
 icon: octicon-heart
 ---
 
-自我介绍什么的，最讨厌了！
 
 
+github:[YoungPeanut.github.io](http://youngpeanut.github.io/)
 
-github:(http://github.com/youngpeanut)
-
-weibo:(http://weibo.com/youngpeanut)
+weibo:[@诗不姓唐](http://weibo.com/youngpeanut)
 
 互粉喽。。。
 

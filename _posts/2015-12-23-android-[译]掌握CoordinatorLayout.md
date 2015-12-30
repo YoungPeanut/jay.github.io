@@ -311,7 +311,7 @@ public static class AvatarImageBehavior
 }
 ```
 
->简书
+[YoungPeanut.github.io](http://youngpeanut.github.io/)
 [博客](http://youngpeanut.github.io/2015-12-23/android-%5B译%5D掌握CoordinatorLayout/)
 
 [原文](http://saulmm.github.io/mastering-coordinator/)

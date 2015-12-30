@@ -46,5 +46,7 @@ description: 陈少的博客首页
 自勉
 
 Hello World! Hello YoungPeanut!
+
 此开博第一篇也
 
+[YoungPeanut.github.io](http://youngpeanut.github.io/)
