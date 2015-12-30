@@ -7,7 +7,7 @@ icon: octicon-heart
 
 
 
-github:[YoungPeanut.github.io](http://youngpeanut.github.io/)
+github:[https://github.com/YoungPeanut](https://github.com/YoungPeanut)
 
 weibo:[@诗不姓唐](http://weibo.com/youngpeanut)
 

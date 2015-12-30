@@ -13,6 +13,7 @@ categories: android
 这些组件配合起来使用可以产生强大的效果，那么让我们通过这篇文章来学习如何使用这些组件。
 
 ###CoordinatorLayout
+
 从名字可以看出，这个ViewGroup是用来协调它的子View的。看下图：
 ![CoordinatorLayout](http://androcode.es/wp-content/uploads/2015/10/simple_coordinator.gif)
 
@@ -109,6 +110,7 @@ categories: android
 
 
 ###AppBarLayout
+
 首先，`AppBarLayout`是一个`LinearLayout`，它的子View默认纵向排列， 可以通过一些参数控制子View的滑动行为。这么说你还是很难理解，所以无图无真相，上GIF：
 
 ![AppBarLayout](http://androcode.es/wp-content/uploads/2015/10/2015-10-27-03_51_37.gif)
@@ -144,16 +146,24 @@ categories: android
 
 
 ###AppbarLayout flags
+
 *SCROLL_FLAG_ENTER_ALWAYS：((entering) / (scrolling on screen))下拉的时候，这个View也会跟着滑出。
+
 *SCROLL_FLAG_ENTER_ALWAYS_COLLAPSED：另一种`enterAlways`，但是只显示折叠后的高度。
-*SCROLL_FLAG_EXIT_UNTIL_COLLAPSED：((exiting) / (scrolling off screen))上拉的时候，这个View会跟着滑动直到折叠。
+
+*SCROLL_FLAG_EXIT_UNTIL_COLLAPSED：((exiting) / (scrolling off screen))上拉的时候，这个View会跟着滑动直到折叠。  
+
 *SCROLL_FLAG_SCROLL：跟着滑动方向滑动。
-*SCROLL_FLAG_SNAP：滑动结束的时候，如果这个View部分显示，它就会滑动到离它最近的上边缘或下边缘。
 
+*SCROLL_FLAG_SNAP：滑动结束的时候，如果这个View部分显示，它就会滑动到离它最近的上边缘或下边缘。  
 
-###CoordinatorLayout Behaviors
-打开Android Studio (>= 1.4)，用模版`Scrolling Activity`新建一个项目，然后直接编译运行。看到：
+  
+###CoordinatorLayout Behaviors  
+
+打开Android Studio (>= 1.4)，用模版`Scrolling Activity`新建一个项目，然后直接编译运行。看到：  
+
 ![Scrolling Activity](http://androcode.es/wp-content/uploads/2015/10/2015-10-27-03_59_27.gif)
+
 
 查看生成的代码，没发现滑动时候Fab大小变化动画的相关代码，Why？
 答案在`FloatingActionButton`的源代码中，感谢Android Studio v1.2自带了反编译源代码的功能，`ctrl/cmd + click`我们来`FloatingActionButton`的源码中究竟干了什么。
@@ -201,6 +211,7 @@ public class FloatingActionButton extends ImageButton {
 
 
 ###SwipeDismissBehavior
+
 在 design support library 中，我们发现了`SwipeDismissBehavior`，有了它，我们可以在`CoordinatorLayout`中轻松实现滑动删除功能。
 
 ![swipe](http://androcode.es/wp-content/uploads/2015/10/hammerheadLMY48Msaulmm10242015161844.gif)
@@ -238,6 +249,7 @@ public void onCreate(Bundle savedInstanceState) {
 
 
 ###Custom Behaviors
+
 自定义Behavior并不难，首先介绍两个元素：child 和 dependency。
 
 ![child](http://androcode.es/wp-content/uploads/2015/10/Screen-Shot-2015-10-27-at-04.42.37-e1445917457348.png)
@@ -312,11 +324,13 @@ public static class AvatarImageBehavior
 ```
 
 [YoungPeanut.github.io](http://youngpeanut.github.io/)
+
 [博客](http://youngpeanut.github.io/2015-12-23/android-%5B译%5D掌握CoordinatorLayout/)
 
 [原文](http://saulmm.github.io/mastering-coordinator/)
 
 ###Resources
+
 ＊[Coordinator Behavior Example](https://github.com/saulmm/CoordinatorBehaviorExample)- Github
 
 ＊[Coordinator Examples](https://github.com/saulmm/CoordinatorExamples)- Github
