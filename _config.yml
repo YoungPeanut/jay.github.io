@@ -1,7 +1,7 @@
 name:               "YoungPeanut"
 description:        "love this world"
 
-url:                "http://youngpeanut.github.io/"
+url:                "http://youngpeanut.github.io"
 author:             "YoungPeanut"
 email:              "shibuxing.com"
 avatar_url:      "http://hoop8.com/1610A/EyQ8Z4yj.png"
@@ -14,7 +14,7 @@ disqus_shortname:   "YoungPeanut"
 
 background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
 
-paginate:           5
+paginate:           8
 paginate_path:      "/page:num/"
 
 baseurl:            ""
