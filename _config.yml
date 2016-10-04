@@ -1,44 +1,49 @@
-permalink: /:year-:month-:day/:title/
+name:               "YoungPeanut"
+description:        "love this world"
 
-highlighter: pygments
-markdown: redcarpet
-redcarpet:
-  extensions: [
-   "no_intra_emphasis"
-   ,"fenced_code_blocks"
-   ,"autolink"
-   ,"tables"
-   ,"strikethrough"
-   ,"superscript"
-   ,"with_toc_data"
-   ,"footnotes"
-   ,"highlight"
-   ,"underline"
-   ,"quote"
-   ,"lax_spacing"
-   ,"prettify"
-#   ,"html_toc"
-  ]
+url:                "http://youngpeanut.github.io/"
+author:             "YoungPeanut"
+email:              "shibuxing.com"
+gravatar_hash:      "205e460b479e2e5b48aec07710c08d50"
+twitter:            "YoungPeanut"
+github:             "YoungPeanut"
 
+disqus_shortname:   "YoungPeanut"
 
+background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
 
-paginate: 10
-paginate_path: ":num"
-baseurl: ""
+paginate:           5
+paginate_path:      "/page:num/"
 
+baseurl:            ""
+permalink:          /:year/:month/:day/:title/
 
+markdown:           kramdown
 
-title: "YoungPeanut"
-email: "shibuxing@gmail.com"
-description: "Developer"
-github_username:  "YoungPeanut"
-swiftype_searchId: "ncwR9a8S9CTx2q9SgsJm"
-disqus_shortname: "rainyalley"
+nav:
+  - name:           "About"
+    href:           "/about"
+  - name:           "Download"
+    href:           "/releases"
 
+sass:
+  style:            :compressed
 
+defaults:
+  -
+    scope:
+      path:         ""
+      type:         "pages"
+    values:
+      layout:       "page"
+  -
+    scope:
+      path:         ""
+      type:         "posts"
+    values:
+      layout:       "post"
 
-url: "http://youngpeanut.github.io"
-imgrepo: "http://youngpeanut.github.io/static/img"
-#url: "http://127.0.0.1:4000"
-#imgrepo: "http://127.0.0.1:4000/static/img"
+gems:
+  - jekyll-paginate
+
 
