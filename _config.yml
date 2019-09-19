@@ -1,53 +1,28 @@
-name:               "YoungPeanut"
-description:        "love this world"
+title: 晴十二郎
+subtitle: 一九八三年小巷
+description: 十二月晴朗
 
-url:                "http://youngpeanut.github.io"
-author:             "YoungPeanut"
-email:              "shibuxing.com"
-avatar_url:      "http://hoop8.com/1610A/EyQ8Z4yj.png"
+author: 晴十二郎
+email: showarm@163.com
+avatar: assets/images/avatar.jpg
 
-weibo:            "YoungPeanut"
-twitter:            "info_ipeanut"
-github:             "YoungPeanut"
+baseurl: ""
+url: "http://showarm.github.io"
 
-disqus_shortname:   "YoungPeanut"
+# Social settings
+# facebook_url: https://www.facebook.com/chris.bobbe
+# linkedin_url: https://www.linkedin.com/in/chrisbobbe1995/
+github_url: https://github.com/showarm
+twitter_url: https://twitter.com/youngpeanut
 
-background:         "http://apple.wallpapersfine.com/wallpapers/original/1242x2208/w-5273.jpg"
+# SEO settiongs
+google_analytics: UA-112211352-1
 
-paginate:           8
-paginate_path:      "/page:num/"
+# Build settings
+remote_theme: chrisbobbe/jekyll-theme-prologue
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
 
-baseurl:            ""
-permalink:          /:year/:month/:day/:title/
-
-markdown:           kramdown
-
-nav:
-  - name:           "About"
-    href:           "/about"
-  - name:           "Download"
-    href:           "/releases"
-
-sass:
-  style:            :compressed
-
-defaults:
-  -
-    scope:
-      path:         ""
-      type:         "pages"
-    values:
-      layout:       "page"
-  -
-    scope:
-      path:         ""
-      type:         "posts"
-    values:
-      layout:       "post"
-
-gems:
-  - jekyll-paginate
-
-
-
-theme: jekyll-theme-dinky
+# Necessary for Prologue theme:
+collections: [sections]

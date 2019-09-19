@@ -1,16 +1,18 @@
 ---
 layout: default
 ---
+{%- include header.html -%}
 
-{% include header.html %}
-
-<div class="content post">
-  <h1 class="post-title">{{ page.title }}</h1>
-  <div class="post-date">
-    <time>{{ page.date | date_to_string }}</time>
-  </div>
-  {{ content }}
+<!-- Main -->
+<div id="main">
+	<!-- Post -->
+	<article class="shade-two">
+	  <div class="container">
+			<header>
+				<h2>{{- page.title -}}</h2>
+				<p>{% if page.author %}{{ page.author }}, {% endif %}{{- page.date | date_to_long_string -}}</p>
+			</header>
+	    {{- content -}}
+	  </div>
+	</article>
 </div>
-{% if site.disqus_shortname %}
-  {% include disqus_comments.html %}
-{% endif %}

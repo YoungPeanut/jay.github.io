@@ -1,44 +1,14 @@
-<!DOCTYPE html>
-<html lang="en">
-{% include head.html %}
-
-<body class="preload">
-    <div class="top"></div>
-    <div class="profile" style="background-image: url({{ site.background }});">
-        <img src="{{ site.avatar_url }}" class="img-circle" />
-        <h3>{{ site.name }}</h3>
-        <p>{{ site.description }}</p>
-        <ul class="social">
-            {% if site.github %}
-            <a type="button" href="http://github.com/{{ site.github }}" target="_blank">
-                <i class="fa fa-github"></i>
-            </a>
-            {% endif %} {% if site.twitter %}
-            <a type="button" href="http://twitter.com/{{ site.twitter }}" target="_blank">
-                <i class="fa fa-twitter"></i>
-            </a>
-            {% endif %} {% if site.linkedin %}
-            <a type="button" href="http://linkedin.com/in/{{ site.linkedin }}" target="_blank">
-                <i class="fa fa-linkedin"></i>
-            </a>
-            {% endif %} {% if site.weibo %}
-            <a type="button" href="http://weibo.com/{{ site.weibo }}" target="_blank">
-                <i class="fa fa-weibo"></i>
-            </a>
-            {% endif %} {% if site.facebook %}
-            <a type="button" href="http://facebook.com/{{ site.facebook }}" target="_blank">
-                <i class="fa fa-facebook"></i>
-            </a>
-            {% endif %}
-        </ul>
-    </div>
-    <div class="posts">
-        {{ content }}
-    </div>
-</body>
-<script type="text/javascript">
-    window.onload = function(){
-        document.getElementsByTagName("BODY")[0].classList.remove("preload");
-    }
-</script>
+<!DOCTYPE HTML>
+<!--
+Prologue by HTML5 UP
+html5up.net | @ajlkn
+Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+Jekyll integration by Chris Bobbe | chrisbobbe.github.io
+-->
+<html>
+	{%- include head.html -%}
+	<body>
+		{{- content -}}
+		{%- include footer.html -%}
+	</body>
 </html>
