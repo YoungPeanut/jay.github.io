@@ -1,4 +1,4 @@
-# Prologue - Jekyll Theme
+# 晴十二郎
 
 [![haha](assets/images/screenshot.png)](http://showarm.github.io/)
 
